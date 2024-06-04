@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alegreya&family=Amatic+SC:wght@400;700&family=Dancing+Script&family=Montserrat:wght@100;400;500;600;800&family=Pacifico&family=Poppins:wght@400;700&family=Righteous&family=Roboto:wght@100;300;400&family=Source+Sans+3:wght@300;400;700&family=Tajawal&display=swap&family="
+    rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <img class="header-img" src="images/wraper.png" alt="war-game-image">
+  </header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark position-sticky top-0 w-75 mx-auto py-3 ">
+    <div class="container">
+      <div class="logo d-flex align-items-center">
+        <img src="images/logo-sm.png" class="logo-img" alt="game-logo">
+        <a class="navbar-brand text-white" href="#"> GAME REVIEWS
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item px-1">
+            <a class="nav-link active px-1 py-0" aria-current="page" data-category="mmorpg">MMORPG</a>
+          </li>
+          <li class="nav-item px-1">
+            <a class="nav-link px-1 py-0" aria-current="page" data-category="shooter">SHOOTER</a>
+          </li>
+          <li class="nav-item px-1">
+            <a class="nav-link px-1 py-0" aria-current="page" data-category="sailing">SAILING</a>
+          </li>
+          <li class="nav-item px-1">
+            <a class="nav-link px-1 py-0" aria-current="page" data-category="permadeath">PERMADEATH</a>
+          </li>
+          <li class="nav-item px-1">
+            <a class="nav-link px-1 py-0" aria-current="page" data-category="superhero">SUPERHERO</a>
+          </li>
+          <li class="nav-item px-1">
+            <a class="nav-link px-1 py-0" aria-current="page" data-category="pixel">PIXEL</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section>
+    <!--   Home ... Cards   -->
+    <div class="home w-100">
+      <div class="container position-relative">
+        <div class="row" id="cards">
+        </div>
+      </div>
+    </div>
+
+    <!--   Details   -->
+    <section class="details bg-dark d-none" id="details">
+      <div class="container">
+      <header class="header py-4 d-flex justify-content-between align-items-center mb-2">
+        <h2 class="text-white h3">Details Game</h2>
+        <button type="button" class="btn-close btn-close-white " id="btn_close"></button>
+      </header>
+        <section class="row g-4 text-white" id="details-content">
+        </section>
+      </div>
+    </section>
+
+    <!--   Loading   -->
+    <div class="loading d-none justify-content-center align-items-center">
+      <span class="loader"></span>
+    </div>
+
+  </section>
+  <!-- Bootstrap js file -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Main js file -->
+  <script src="js/main.js" type="module"></script>
+
+</body>
+
+</html>
